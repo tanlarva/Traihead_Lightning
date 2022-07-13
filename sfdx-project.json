@@ -5,7 +5,7 @@
       "default": true
     }
   ],
-  "name": "Traihead_Lightning",
+  "name": "lightning",
   "namespace": "",
   "sfdcLoginUrl": "https://login.salesforce.com",
   "sourceApiVersion": "55.0"
