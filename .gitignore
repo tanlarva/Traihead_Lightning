@@ -6,10 +6,9 @@
 .sf/
 .sfdx/
 .localdevserver/
-deploy-options.json
 
 # LWC VSCode autocomplete
-**/lwc/jsconfig.json
+jsconfig.json
 
 # LWC Jest coverage reports
 coverage/
@@ -36,5 +35,6 @@ ehthumbs.db
 [Dd]esktop.ini
 $RECYCLE.BIN/
 
-# Local environment variables
-.env
+# VS Code project settings
+.vscode/
+!.vscode/extensions.json
