@@ -1,0 +1,22 @@
+<template>
+    <lightning-card title="Controls" icon-name="action:upload">
+        <lightning-layout>
+            <lightning-layout-item flexibility="auto" padding="around-small">
+                <lightning-button variant="brand" label="Subtract" title="Subtract" onclick={handleSubtract} icon-name="utility:dash" ></lightning-button>
+            </lightning-layout-item>
+            <lightning-layout-item flexibility="auto" padding="around-small" onbuttonclick={handleMultiply}>
+                <template for:each={factors} for:item="factor">
+                    <c-button
+                        key={factor}
+                        label={factor}
+                        data-factor={factor}
+                        icon="utility:close">
+                    </c-button>
+                </template>
+            </lightning-layout-item>
+            <lightning-layout-item flexibility="auto" padding="around-small">
+                <lightning-button variant="brand" label="Add" title="Add" onclick={handleAdd} icon-position="right" icon-name="utility:add"></lightning-button>
+            </lightning-layout-item>
+        </lightning-layout>
+    </lightning-card>
+</template>

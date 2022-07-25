@@ -35,6 +35,6 @@ public class UpdateContactAddresses implements
             FROM AsyncApexJob
             WHERE Id = :bc.getJobId()];
         // call some utility to send email
-        EmailUtils.sendMessage(job, recordsProcessed);
+
     }
 }
